@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { FooDirective } from './foo.directive';
 import { HomeComponent } from './home/home.component';
 
 @Component({
@@ -9,6 +9,6 @@ import { HomeComponent } from './home/home.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [RouterModule, HomeComponent, ContactUsComponent],
+  imports: [RouterModule, FormsModule, HomeComponent, ContactUsComponent],
 })
 export class AppComponent {}

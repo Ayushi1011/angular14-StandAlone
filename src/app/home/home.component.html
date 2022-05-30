@@ -1,1 +1,9 @@
 <p>home works!</p>
+<div>
+  <input [(ngModel)]="searchTerm" placeholder="Filter" />
+  <ul>
+    <li *ngFor="let person of persons | filter: searchTerm:'name'">
+      {{ person.name }}
+    </li>
+  </ul>
+</div>
