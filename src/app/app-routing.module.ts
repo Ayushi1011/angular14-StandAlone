@@ -20,7 +20,9 @@ export const appRoutes: Routes = [
   },
   {
     path: 'about',
-    loadChildren: () =>
-      import('./about/about.routes').then((m) => m.aboutRoutes),
+    loadComponent: () =>
+      import('./about/about.component').then(
+        (c) => c.AboutComponent
+      ),
   },
 ];

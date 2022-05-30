@@ -9,8 +9,6 @@ import { HomeComponent } from './home/home.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [RouterModule,HomeComponent,AboutComponent,ContactUsComponent],
+  imports: [RouterModule, HomeComponent, ContactUsComponent],
 })
-export class AppComponent {
-  
-}
+export class AppComponent {}
